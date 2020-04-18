@@ -2,7 +2,7 @@ version: '2'
 
 services:
   payment:
-    image: weaveworksdemos/payment
+    image: haroldmei/payment
     hostname: payment
     restart: always
     cap_drop:
