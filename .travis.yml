@@ -13,7 +13,7 @@ env:
 - GROUP=haroldmei COMMIT=$TRAVIS_COMMIT TAG=$TRAVIS_TAG REPO=payment;
 script:
 - set -e
-- "make test"
+- "make -f Makefile.mk test"
 after_success:
 - set -e;
 - if [ -z "$DOCKER_PASS" ] ; then echo "This is a build triggered by an external PR.
