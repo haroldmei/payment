@@ -10,7 +10,7 @@ before_install:
 - gvt restore
 install: true
 env:
-- GROUP=haroldmei TRAVIS_TAG=latest COMMIT=$TRAVIS_COMMIT TAG=$TRAVIS_TAG REPO=payment;
+- GROUP=haroldmei COMMIT=$TRAVIS_COMMIT TAG=$TRAVIS_TAG REPO=payment;
 script:
 - set -e
 - "make test"
